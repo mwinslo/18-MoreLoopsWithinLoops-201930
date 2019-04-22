@@ -4,8 +4,8 @@ in the context of PRINTING on the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Montgomery Winslow.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -56,7 +56,7 @@ def triangle_right_justified(r):
     For purposes of "lining up", assume r is a single digit.
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # HINT: Do the following problem FIRST, then convert x's to spaces:
@@ -74,7 +74,12 @@ def triangle_right_justified(r):
     #   in this or the other problems in this module, as doing so would
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
-
+    for k in range(1, r+1):
+        for j in range(r-k):
+            print(' ', end='')
+        for j in range(k):
+            print(j+1, end='')
+        print()
 
 def run_test_triangle_upside_down():
     """ Tests the    triangle_upside_down    function. """
